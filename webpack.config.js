@@ -10,6 +10,13 @@ module.exports = {
         path: path.join(__dirname, './dist'),
         filename: 'bundle.js'
     },
+    resolve :{
+        alias : {
+            
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': path.resolve(__dirname,'src'),
+        }
+    },
     plugins: [
         new VueLoaderPlugin(),
         new htmlWebpackPlugin({
@@ -27,7 +34,7 @@ module.exports = {
                 test: /\.less$/,
                 use: ['style-loader', 'css-loader', 'less-loader']
             },
-            //   { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+              { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
             {
                 test: /\.(png|jpg|gif)$/,
                 use: 'url-loader?limit=43&name=[hash:8]-[name].[ext]'
@@ -36,6 +43,10 @@ module.exports = {
                 test: /\.(ttf|eot|svg|woff|woff2)$/,
                 use: 'url-loader'
             },
+            // {
+            //     test: /\.(png|jpg|gif)$/,
+            //     use: ['style-loader', 'css-loader',  'url-loader?limit=43&name=[hash:8]-[name].[ext] ']
+            // },
             {
                 test: /\.js$/,
                 use: 'babel-loader',
