@@ -22,3 +22,9 @@
 2. 下载对应的包  npm i vue-resourse -S
 3. import VueResource from 'vue-resourc'
 4. Vue.use(VueResource)
+5. 遇到的问题就是 图片写入地址的时候 存在路径的问题,静态写法最后导包的时候会出问题,
+最好的写法就是通过属性去绑定!
+
+### 完成首页的九宫格
+
+1. 找到mui中的grid 也就是栅格系统
