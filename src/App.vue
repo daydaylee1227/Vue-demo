@@ -60,6 +60,7 @@ export default {
   margin-top: 40px;
   overflow-x: hidden;
 }
+
 .v-leave-to{
   opacity: 0;
   transform: translateX(-100%);

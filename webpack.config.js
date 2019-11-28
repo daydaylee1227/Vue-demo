@@ -30,11 +30,11 @@ module.exports = {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             }, //处理css文件的规则
-            {
-                test: /\.less$/,
-                use: ['style-loader', 'css-loader', 'less-loader']
-            },
-              { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
+            // {
+            //     test: /\.less$/,
+            //     use: ['style-loader', 'css-loader', 'less-loader']
+            // },
+            //   { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'] },
             {
                 test: /\.(png|jpg|gif)$/,
                 use: 'url-loader?limit=43&name=[hash:8]-[name].[ext]'

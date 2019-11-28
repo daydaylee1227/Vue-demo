@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mt-swipe :auto="1000" :stopPropagation="true">
+    <mt-swipe :auto="3000" :stopPropagation="true">
       <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
         <img :src="item.url" alt />
       </mt-swipe-item>
@@ -8,10 +8,10 @@
     <!-- 九宫格的改造 -->
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
-        <a href="#">
+        <router-link to="/home/newlist">
           <img :src="menulist[0].url" alt="">
           <div class="mui-media-body">新闻资讯</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
         <a href="#">
