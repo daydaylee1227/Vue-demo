@@ -44,7 +44,7 @@
         </a>
       </li>
     </ul>
-    <h3>Home</h3>
+    
   </div>
 </template>
 
